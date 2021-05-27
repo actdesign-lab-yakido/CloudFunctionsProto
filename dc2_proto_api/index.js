@@ -4,15 +4,15 @@ const app = express();
 const USERS = [
   {
     id: 1,
-    name: 'harada',
+    name: 'yamada',
   },
   {
     id: 2,
-    name: 'inukai',
+    name: 'tanaka',
   },
   {
     id: 3,
-    name: 'kido',
+    name: 'sato',
   }
 ];
 
