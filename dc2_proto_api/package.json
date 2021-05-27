@@ -1,0 +1,13 @@
+{
+  "name": "dc2_proto_api",
+  "version": "1.0.0",
+  "description": "prototype express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yakido",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
