@@ -18,7 +18,7 @@ $ gcloud functions deploy dc2_proto_api --runtime nodejs14 --trigger-http --entr
 - web側デプロイ
 ```
 $ cd dc2_proto_web
-$ gcloud functions deploy dc2_proto_web --runtime nodejs14 --trigger-http --entry-point app --region=asia-northeast1 --allow-unauthenticated 
+$ gcloud functions deploy dc2_proto_web --runtime nodejs14 --trigger-http --entry-point app --region=asia-northeast1 --allow-unauthenticated --set-env-vars PROJECT=$DEVSHELL_PROJECT_ID,REGION=asia-northeast1
 ```
 
 # 確認
