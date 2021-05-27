@@ -12,14 +12,17 @@ $ git clone このリポジトリ
 - api側デプロイ
 ```
 $ cd dc2_proto_api
-$ gcloud functions deploy dc2_proto_api --runtime nodejs14 --trigger-http --entry-point app --allow-unauthenticated
+$ gcloud functions deploy dc2_proto_api --runtime nodejs14 --trigger-http --entry-point app --region=asia-northeast1 --allow-unauthenticated 
 ```
 
 - web側デプロイ
 ```
 $ cd dc2_proto_web
-$ gcloud functions deploy dc2_proto_web --runtime nodejs14 --trigger-http --entry-point app --allow-unauthenticated
+$ gcloud functions deploy dc2_proto_web --runtime nodejs14 --trigger-http --entry-point app --region=asia-northeast1 --allow-unauthenticated 
 ```
 
 # 確認
 - デプロイで生成された https://ドメイン/dc2_proto_web/ にアクセス 
+
+# その他
+- VPCを設定すれば内部ルーティングに制限できそう
