@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const axiosBase = require("axios");
 const axios = axiosBase.create({
-  baseURL: 'https://us-central1-itengineer.cloudfunctions.net', 
+  baseURL: 'https://asia-northeast1-itengineer.cloudfunctions.net/',
+  timeout: 3000,
   headers: {
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
