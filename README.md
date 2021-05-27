@@ -25,4 +25,4 @@ $ gcloud functions deploy dc2_proto_web --runtime nodejs14 --trigger-http --entr
 - デプロイで生成された https://ドメイン/dc2_proto_web/ にアクセス 
 
 # その他
-- VPCを設定すれば内部ルーティングに制限できそう
+- [VPC](https://cloud.google.com/functions/docs/networking/network-settings?hl=ja) を設定すれば内部ルーティングに制限できそう
